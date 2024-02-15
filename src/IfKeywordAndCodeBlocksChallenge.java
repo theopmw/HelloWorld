@@ -2,14 +2,7 @@ public class IfKeywordAndCodeBlocksChallenge {
 
     public static void main(String[] args) {
 
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
-
-        int finalScore = score;
-
-        calculateScore(true, 800, levelCompleted, bonus);
+        calculateScore(true, 800, 5, 100);
 
         calculateScore(true, 10000, 8, 200);
 
