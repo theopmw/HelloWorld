@@ -9,14 +9,9 @@ public class IfKeywordAndCodeBlocksChallenge {
 
         int finalScore = score;
 
-        if (gameOver) {
-            finalScore += (levelCompleted * bonus);
-            finalScore += 1000;
-            System.out.println("Your final score was: " + finalScore);
-        }
+        calculateScore(true, 800, levelCompleted, bonus);
 
-
-        gameOver = true;
+//        gameOver = true;
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
@@ -25,6 +20,17 @@ public class IfKeywordAndCodeBlocksChallenge {
 
         if (gameOver) {
             finalScore += (levelCompleted * bonus);
+            System.out.println("Your final score was: " + finalScore);
+        }
+    }
+
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+
+        int finalScore = score;
+
+        if (gameOver) {
+            finalScore += (levelCompleted * bonus);
+            finalScore += 1000;
             System.out.println("Your final score was: " + finalScore);
         }
     }
